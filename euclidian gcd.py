@@ -21,3 +21,17 @@ while a % b !=0 :
     a =b 
     b =r
 print (b , 'id gcd')
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+# Make sure a >= b
+if b > a:
+    a, b = b, a
+
+while b != 0:
+    r = a % b
+    a = b
+    b = r
+
+print(a, 'is gcd')
