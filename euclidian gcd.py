@@ -35,3 +35,14 @@ while b != 0:
     b = r
 
 print(a, 'is gcd')
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+VOWELS 
+
+
+a = [a,e,i,o,u , A ,E,I,O,U]
+x = input ( 'enter char :') 
+if x in a:
+    print ('is vowel')
+else :
+    print('not vowel')
