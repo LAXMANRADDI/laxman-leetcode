@@ -13,3 +13,11 @@ b = abs(b)
 while b != 0:
     a, b = b, a % b
 print('The greatest common divisor is:', a)
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+a = int(input())
+b = int (input ())
+while a % b !=0 :
+    r =a % b  
+    a =b 
+    b =r
+print (b , 'id gcd')
