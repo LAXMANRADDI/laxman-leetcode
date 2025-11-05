@@ -25,3 +25,11 @@ class Solution:
             if complement in num_map:
                 return [num_map[complement], i]  # Return indices of complement and current number
             num_map[num] = i  # Store the number with its index
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1]verifying  palindrome 
+def isPalindrome(x: int) -> bool:
+    return str(x) == str(x)[::-1]
+    
+2] 
+x = input('enter')
+print('true' if  x[::] == x[::-1] else 'false')
