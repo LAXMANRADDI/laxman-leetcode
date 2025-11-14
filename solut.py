@@ -59,3 +59,22 @@ class Solution:
         return prefix
 input :: ["flower","flow","flight"]
 output :: "fl"
+
+
+3]] valid paranthesis::
+Push opening brackets to a stack .
+When a closing bracket appears, check if it matches the top of the stack.
+
+class Solution:
+    def isValid(self, s: str) -> bool:
+        stack = []
+        pairs = {')': '(', ']': '[', '}': '{'}
+        
+        for char in s:
+            if char in pairs:
+                if not stack or stack[-1] != pairs[char]:
+                    return False
+                stack.pop()  # match found, remove opening
+            else:
+                stack.append(char)  # opening bracket
+        return len(stack) == 0
