@@ -30,3 +30,7 @@ class Solution:
                 total += roman[s[i]]
         
         return total
+input :   s = "MCMXCIV"
+
+output :  1994
+
