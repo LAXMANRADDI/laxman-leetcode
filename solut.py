@@ -36,3 +36,8 @@ output :  1994
 
 
 2] Given an array of strings, find the longest common prefix among all strings. If there is no common prefix, return "". 
+ *]]Approach (Horizontal Scanning — Fast & Simple)
+Assume the first string is the prefix.
+Compare it with each next string.
+Shrink the prefix until it matches the start of each string.
+Return the final prefix.
