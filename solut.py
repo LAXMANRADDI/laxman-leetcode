@@ -78,3 +78,6 @@ class Solution:
             else:
                 stack.append(char)  # opening bracket
         return len(stack) == 0
+
+input :"()"
+output : true
