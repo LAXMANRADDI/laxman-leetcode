@@ -41,3 +41,21 @@ Assume the first string is the prefix.
 Compare it with each next string.
 Shrink the prefix until it matches the start of each string.
 Return the final prefix.
+
+
+class Solution:
+    def longestCommonPrefix(self, strs):
+        if not strs:
+            return ""
+        
+        prefix = strs[0]  # assume prefix is whole first string
+        
+        for s in strs[1:]:
+            while not s.startswith(prefix):
+                prefix = prefix[:-1]  # shrink prefix
+                if not prefix:
+                    return ""
+        
+        return prefix
+input :: ["flower","flow","flight"]
+output :: "fl"
