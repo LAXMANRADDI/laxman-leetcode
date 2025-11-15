@@ -126,3 +126,13 @@ output :: k = 5, nums = [0,1,2,3,4]
 6 ]] to remove an element ::
  Given an integer array nums and an integer val, remove all occurrences of val in-place. The relative order of the elements may be changed.
 Return the new length of the array after removal.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+class Solution:
+    def removeElement(self, nums, val):
+        left = 0  # Pointer for placement
+        for right in range(len(nums)):
+            if nums[right] != val:
+                nums[left] = nums[right]
+                left += 1
+        return left
+
