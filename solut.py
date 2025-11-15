@@ -107,3 +107,17 @@ class Solution:
 5 ]] to remove duplicated values from array ::
 Given a sorted array nums, remove the duplicates in-place so that each unique element appears only once.
 Return the number of unique elements (k), and modify nums such that the first k elements contain the unique values.
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    class Solution:
+    def removeDuplicates(self, nums) -> int:
+        if not nums:
+            return 0
+        
+        i = 0  # place to store next unique number
+        for j in range(1, len(nums)):
+            if nums[j] != nums[i]:
+                i += 1
+                nums[i] = nums[j]
+        
+        return i + 1  # count of unique elements
