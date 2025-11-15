@@ -81,3 +81,26 @@ class Solution:
 
 input :"()"
 output : true
+ 4]] merging two sorted list ::
+Given the heads of two sorted linked lists, merge the two lists into a single sorted linked list, without creating new nodes, and return its head.
+# Definition for singly-linked list.
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+class Solution:
+    def mergeTwoLists(self, list1: ListNode, list2: ListNode) -> ListNode:
+        dummy = ListNode()  # Start of new merged list
+        current = dummy     # Iterator pointer
+        while list1 and list2:
+            if list1.val < list2.val:
+                current.next = list1
+                list1 = list1.next
+            else:
+                current.next = list2
+                list2 = list2.next
+            current = current.next
+        current.next = list1 if list1 else list2
+        
+        return dummy.nexta
