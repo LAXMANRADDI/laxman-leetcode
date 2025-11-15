@@ -123,3 +123,6 @@ Return the number of unique elements (k), and modify nums such that the first k 
         return i + 1  # count of unique elements
 input :: nums = [0,0,1,1,1,2,2,3,3,4]
 output :: k = 5, nums = [0,1,2,3,4]
+6 ]] to remove an element ::
+ Given an integer array nums and an integer val, remove all occurrences of val in-place. The relative order of the elements may be changed.
+Return the new length of the array after removal.
