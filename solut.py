@@ -121,3 +121,4 @@ Return the number of unique elements (k), and modify nums such that the first k 
                 nums[i] = nums[j]
         
         return i + 1  # count of unique elements
+input :: nums = [0,0,1,1,1,2,2,3,3,4]
