@@ -136,3 +136,11 @@ class Solution:
                 left += 1
         return left
 
+
+input ::
+[3,2,2,3]
+3
+
+output ::
+[2,2]
+
