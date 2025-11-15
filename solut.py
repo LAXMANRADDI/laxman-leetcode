@@ -104,3 +104,6 @@ class Solution:
         current.next = list1 if list1 else list2
         
         return dummy.nexta
+5 ]] to remove duplicated values from array ::
+Given a sorted array nums, remove the duplicates in-place so that each unique element appears only once.
+Return the number of unique elements (k), and modify nums such that the first k elements contain the unique values.
