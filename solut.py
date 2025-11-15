@@ -144,3 +144,7 @@ output ::
 [2,2]
 
 7 ]] Given two strings haystack and needle, return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
+class Solution:
+    def strStr(self, haystack: str, needle: str) -> int:
+        return haystack.find(needle) 
+input :"sadbutsad"
