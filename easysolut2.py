@@ -28,4 +28,22 @@ Input: nums = [1,3,5,6], target = 7
 Output: 4 # 7 would be inserted at the end.
 
 
-    return low  # insert position
+    return low  # insert position 
+
+66 ]  Problem Statement:
+You are given a large integer represented as an array of digits, where each digit is between 0 and 9.
+The digits are arranged so that the most significant digit is at the start of the array.
+You are asked to add one to the integer and return the resulting digits as a new array.
+
+
+def plusOne(digits):
+    n = len(digits)
+    
+    for i in range(n - 1, -1, -1):  # Start from last digit
+        if digits[i] < 9:
+            digits[i] += 1
+            return digits
+        digits[i] = 0  # Set current position to 0 if it was 9
+        
+    # If loop completes, it means digits were like [9,9,9]
+    return [1] + digits
