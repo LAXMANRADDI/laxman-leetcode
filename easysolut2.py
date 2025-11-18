@@ -24,4 +24,8 @@ Output: 2 # Target 5 is at index 2.
 Input: nums = [1,3,5,6], target = 2
 Output: 1 #If 2 is inserted between 1 and 3, its index would be 1.
 
+Input: nums = [1,3,5,6], target = 7
+Output: 4 # 7 would be inserted at the end.
+
+
     return low  # insert position
