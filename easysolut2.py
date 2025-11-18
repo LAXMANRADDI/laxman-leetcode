@@ -78,3 +78,6 @@ def addBinary(a, b):
 
 i]Input: a = "11", b = "1"
   Output: "100" #  3 + 1 = 4 in decimal, which is 100 in binary.
+ii ] Input: a = "1010", b = "1011"
+     Output: "10101" #  10 + 11 = 21 in decimal, which is 10101 in binary.
+
