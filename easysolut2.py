@@ -47,3 +47,5 @@ def plusOne(digits):
         
     # If loop completes, it means digits were like [9,9,9]
     return [1] + digits
+Input: digits = [1, 2, 3]
+Output: [1, 2, 4] #  The integer is 123. Adding 1 gives 124.
