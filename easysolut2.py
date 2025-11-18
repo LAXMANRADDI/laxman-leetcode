@@ -52,4 +52,7 @@ def plusOne(digits):
 
 ii ]Input: digits = [9]
     Output: [1, 0] # 9 + 1 = 10 → need to extend the array.
-iii] 
+
+iii]Input: digits = [9, 9, 9]
+    Output: [1, 0, 0, 0] # 999 + 1 = 1000
+ 
