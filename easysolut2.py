@@ -74,3 +74,7 @@ def addBinary(a, b):
         result.append(str(total % 2))  # binary digit
         carry = total // 2             # next carry
     return ''.join(reversed(result))  # join reversed result list
+
+
+i]Input: a = "11", b = "1"
+  Output: "100" #  3 + 1 = 4 in decimal, which is 100 in binary.
